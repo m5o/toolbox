@@ -5,8 +5,8 @@ http://www.utf8-chartable.de/unicode-utf8-table.pl
 
 ## Installation
 
-* copy ```iso_validator.rb``` to ```app/validators/iso_validator.rb```
-* copy ```iso_validator_spec.rb``` to ```spec/validators/iso_validator_spec.rb```
+* copy `iso_validator.rb` to `app/validators/iso_validator.rb`
+* copy `iso_validator_spec.rb` to `spec/validators/iso_validator_spec.rb`
 
 ## Usage
 
