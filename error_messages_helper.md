@@ -9,7 +9,7 @@ Rails Error Messages Form Helper
 
 ## Usage
 
-```ruby
+```erb
   <%= f.error_messages %>
   <%= error_messages_for(@object) %>
 ```
