@@ -4,8 +4,8 @@ show only one error message per field
 
 ## Installation
 
-* copy ```reduce_validator.rb``` to ```app/validators/reduce_validator.rb```
-* copy ```reduce_validator_spec.rb``` to ```spec/validators/reduce_validator_spec.rb```
+* copy `reduce_validator.rb` to `app/validators/reduce_validator.rb`
+* copy `reduce_validator_spec.rb` to `spec/validators/reduce_validator_spec.rb`
 
 ## Usage
 
