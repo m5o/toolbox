@@ -5,7 +5,7 @@ Files I copy from project to project, sometimes.
 ## Usage
 
 * Check the markdown file with documentation
-* Use the [rench gem](https://github.com/mrmicahcooper/rench) command or use ```curl``` to get it
+* Use the [rench gem](https://github.com/mrmicahcooper/rench) command or use `curl` to get it
 
 ```bash
 $ gem install rench
