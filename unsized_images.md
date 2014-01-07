@@ -9,7 +9,7 @@ Identify unsized images during development
 ## Usage
 
 ```css
-@import unsized_images;
+@import partials/unsized_images;
 ```
 
 ## Credits
