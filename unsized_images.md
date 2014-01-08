@@ -4,7 +4,7 @@ Identify unsized images during development
 
 ## Installation
 
-* copy `_unsized_images.scss` to `app/assets/stylesheets/partials/_unsized_images.rb`
+* copy `unsized_images.scss` to `app/assets/stylesheets/partials/_unsized_images.scss`
 
 ## Usage
 
