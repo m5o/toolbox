@@ -9,7 +9,7 @@ Password score/strength indicatior. Display password scoring with log output (de
 
 ## Usage
 
-```html
+```erb
 <div class="password-meter">
 	<div class="password-meter-bar-wrapper">
 		<div class="password-meter-bar">&nbsp;</div>
