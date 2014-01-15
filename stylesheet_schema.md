@@ -46,7 +46,7 @@ stylesheets/
 
 
 ```scss
-# app/assets/stylesheets/modules/_all.scss
+//# app/assets/stylesheets/modules/_all.scss
 // import all modules
 // REMEMBER modules output no css
 @import "mixins";
@@ -54,7 +54,7 @@ stylesheets/
 
 
 ```scss
-# app/assets/stylesheets/partials/_base.scss
+//# app/assets/stylesheets/partials/_base.scss
 // place global project variables here
 /* -------------------------------------------------------- variables */
 // $brand-primary:         #ED6D39;
@@ -67,7 +67,7 @@ stylesheets/
 
 
 ```scss
-# app/assets/stylesheets/unit-project.css.scss
+//# app/assets/stylesheets/unit-project.css.scss
 // optional normalize css
 // @import "vendor/normalize";
 
