@@ -10,13 +10,13 @@ Generate static maintenance pages with layout and all dynamic content.
 
 ```ruby
 controller :static do
-  # to generate static maintenance pages
+  # routes to generate maintenance pages
   scope 'maintenance', as: :maintenance do
-    get '/mode',            to: :maintenance_mode
-    get '/error',           to: :maintenance_error
-    get '/404',             to: :maintenance_404
-    get '/422',             to: :maintenance_422
-    get '/500',             to: :maintenance_500
+    get '/mode',       to: :maintenance_mode
+    get '/error',      to: :maintenance_error
+    get '/404',        to: :maintenance_404
+    get '/422',        to: :maintenance_422
+    get '/500',        to: :maintenance_500
   end
 end
 ```
