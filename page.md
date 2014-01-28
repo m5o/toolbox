@@ -13,7 +13,8 @@ Store page attributes in global `@page` var. Structure in modules and classes be
 ## Usage
 
 
-`app/controllers/application_controller.rb`
+#### `app/controllers/application_controller.rb`
+
 ```ruby
 class ApplicationController < ActionController::Base
 
@@ -50,7 +51,8 @@ protected
 ```
 
 
-`app/helpers/application_helper.rb`
+#### `app/helpers/application_helper.rb`
+
 ```ruby
 # encoding: utf-8
 module ApplicationHelper
@@ -76,7 +78,8 @@ module ApplicationHelper
 ```
 
 
-example use in `app/views/layouts/application.html.erb`
+#### example use in `app/views/layouts/application.html.erb`
+
 ```erb
 <%= title_element %>
 
@@ -85,13 +88,14 @@ example use in `app/views/layouts/application.html.erb`
 ```
 
 
-example use in `app/views/layouts/application.html.erb` generate `<body class="...">`
+#### example use in `app/views/layouts/application.html.erb` generate `<body class="...">`
+
 ```erb
 <%= body_element(@page.body_class) %>
 ```
 
 
-example in `app/controllers/*_controller.rb`
+#### example in `app/controllers/*_controller.rb`
 
 change title, meta desc for singe page or complete controller with `before_filter`
 
@@ -105,7 +109,8 @@ end
 ```
 
 
-example in `app/views/**/*.html.erb`
+#### example in `app/views/**/*.html.erb`
+
 ```erb
 <%# or update/change the values inside .html.erb %>
 <% debug(@page) %>
