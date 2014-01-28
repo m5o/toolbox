@@ -1,6 +1,6 @@
 # Page attributes concept
 
-Store page attributes in global `@page` var. Structure in classes with inheritance.
+Store page attributes in global `@page` var. Structure in modules and classes benefit from inheritance.
 
 
 ## Installation
@@ -12,13 +12,18 @@ Store page attributes in global `@page` var. Structure in classes with inheritan
 
 ## Usage
 
+
+`app/controllers/application_controller.rb`
 ```ruby
 class ApplicationController < ActionController::Base
+
+# [...]
 
 before_action :create_default_page
 
 layout :page_layout
 
+# [...]
 
 # ================================================================= PROTECTED
 protected
@@ -45,6 +50,7 @@ protected
 ```
 
 
+`app/helpers/application_helper.rb`
 ```ruby
 # encoding: utf-8
 module ApplicationHelper
@@ -70,7 +76,7 @@ module ApplicationHelper
 ```
 
 
-
+example use in `app/views/layouts/application.html.erb`
 ```erb
 <%= title_element %>
 
@@ -79,14 +85,18 @@ module ApplicationHelper
 ```
 
 
+example use in `app/views/layouts/application.html.erb` generate `<body class="...">`
 ```erb
 <%= body_element(@page.body_class) %>
 ```
 
+
+example in `app/controllers/*_controller.rb`
+
+change title, meta desc for singe page or complete controller with `before_filter`
+
 ```ruby
-# in *_controller.rb
-# change title, meta desc for singe page or complete controller with before_filter
-def method
+def index
   @page.title = "custom title"
   @page.meta_description = "custom meta"
   # add values with
@@ -95,6 +105,7 @@ end
 ```
 
 
+example in `app/views/**/*.html.erb`
 ```erb
 <%# or update/change the values inside .html.erb %>
 <% debug(@page) %>
