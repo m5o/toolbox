@@ -36,10 +36,10 @@ stylesheets/
 │   └── _typography.scss.scss
 │
 ├── sections/
-│   └── _pricelist.css
+│   └── _pricelist.scss
 │
 ├── vendor/
-│   └── _normalize.css
+│   └── _normalize.scss
 │
 └── unit-project.css.scss
 ```
@@ -68,7 +68,7 @@ stylesheets/
 
 ```scss
 //# app/assets/stylesheets/unit-project.css.scss
-// optional normalize css
+// optional normalize
 // @import "vendor/normalize";
 
 
