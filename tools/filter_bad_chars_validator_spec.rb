@@ -14,7 +14,7 @@ describe FilterBadCharsValidator do
 
   bad_chars = %w[~ * ? $ § % ° < > # ! + , : ; _ & / \\ @ ( ) [ ] { } | " ]
   bad_chars.each do |char|
-    it "filters bad character #{char}" do
+    it "filters bad character: #{char}" do
       expect(item).to receive(:name).and_return("John #{char}")
 
       filter_bad_chars_validator.validate_each(item, :name, item.name)
