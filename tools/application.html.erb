@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<!-- /.../ -->
+
+	<%= content_for?(:stylesheet) ? yield(:stylesheet) : render("stylesheet") %>
+	<%= content_for?(:extend_stylesheet) ? yield(:extend_stylesheet) : render("extend_stylesheet") rescue nil %>
+</head>
+
+<body>
+	<%= content_for?(:app_header) ? yield(:app_header) : render("app_header") rescue nil %>
+	
+	<%= yield %>
+	
+	<%= content_for?(:app_footer) ? yield(:app_footer) : render("app_footer") rescue nil %>
+
+	<div id="extra-markup"><span><!--/--></span></div>
+
+
+	<%= content_for?(:javascript) ? yield(:javascript) : render("javascript") %>
+	<%= content_for?(:extend_javascript) ? yield(:extend_javascript) : render("extend_javascript") rescue nil %>
+</body>
+</html>
