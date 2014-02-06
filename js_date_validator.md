@@ -34,3 +34,4 @@ $("#birthyear").focusout( function() {
 ## Documentation
 
 * http://codepen.io/anon/pen/IFEHx
+* http://blog.adtile.me/2014/01/16/a-dive-into-plain-javascript/
