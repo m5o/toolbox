@@ -15,6 +15,19 @@ touch app/assets/stylesheets/partials/_base.scss
 touch app/assets/stylesheets/unit-project.css.scss
 ```
 
+## Basics
+
+Read the linked resources in the Docs & Credits section at the bottom.
+
+Goal is to define stylesheet packages. These files are prefixed with `unit-`. All files with this prefix will be precompiled by rails.
+
+```ruby
+# config/environments/produciton.rb
+# Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
+config.assets.precompile += [ /^unit-\w+.(css|js)$/ ]
+```
+
+
 ## Demo and Usage
 
 Example Directory Tree. 
@@ -76,6 +89,10 @@ stylesheets/
 @import "partials/base";
 
 
+// frameworks
+@import "bootstrap";
+
+
 // only used partials
 @import "partials/alerts",
 		"partials/body",
@@ -91,7 +108,6 @@ stylesheets/
 
 // 3rd party vendor
 // @import "vendor/colorpicker";
-@import "bootstrap";
 ```
 
 
