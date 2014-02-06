@@ -67,6 +67,10 @@ stylesheets/
 
 
 ```scss
+// Use bourbon for css3 helper
+@import "bourbon";
+
+
 //# app/assets/stylesheets/partials/_base.scss
 // place global project variables here
 /* -------------------------------------------------------- variables */
