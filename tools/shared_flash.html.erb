@@ -1,0 +1,20 @@
+<% locals[:flash].each do |type, body| %>
+	<% # skip devise flash variable  %>
+	<% next if type == :timedout %>
+	<%# unless locals[:flash][type].blank? ## if extra markup is needed %>
+
+	<%= content_tag :div, class: "alert alert-#{type} alert-flash" do %>
+		<button class="close" data-dismiss="alert">×</button>
+		<%#= '<h4 class="alert-heading"></h4>' %>
+		<% if body.kind_of?(Array) %>
+			<ul>
+				<% body.each do |message| %>
+					<%= content_tag(:li, message) %>
+				<% end %>
+			</ul>
+		<% else %>
+			<%= content_tag(:p, body) %>
+		<% end %>
+	<% end %>
+
+<% end %>
