@@ -8,6 +8,8 @@ Store page attributes in global `@page` var. Structure in modules and classes be
 * copy `page.rb` to `app/models/page.rb`
 * copy `page_spec.rb` to `spec/models/page_spec.rb`
 * add `before_action`, `layout` and the `protected` methods inside `application_controller.rb`
+* extend `application_helper.rb`
+* copy `application_helper_spec.rb` to `spec/helpers/application_helper_spec.rb`
 
 
 ## Usage
@@ -57,7 +59,7 @@ __`app/helpers/application_helper.rb`__
 # encoding: utf-8
 module ApplicationHelper
 
-  # =========================================================================== B: html markup helper
+  # html markup helper
   def title_element(prefix = '', suffix = '')
     content_tag(:title, prefix + @page.title + @page.name + suffix)
   end
@@ -74,7 +76,6 @@ module ApplicationHelper
     body_id = "#{controller_path.tr('/', '_')}_#{action_name}"
     tag("body", { id: body_id , class: body_class }, true)
   end
-  # ===========================================================================
 ```
 
 
