@@ -49,7 +49,7 @@ Rails template inheritance workflow
 
 The key role has the oneline ternary operator construct `<%= content_for?(:app_footer) ? yield(:app_footer) : render("app_footer") rescue nil %>` inside the application layout file.
 
-- The `rescue nil` is optional. If you remove it the block will be mandatory. 
+- The `rescue nil` is optional. If you remove it the block will be mandatory.
 - You could include or overwrite content form `erb`-files with the `content_for(:extend_stylesheet)` block
 - Template inheritance – load specific partial e.g. Products, create `app/views/products/_app_footer.html.erb`
 

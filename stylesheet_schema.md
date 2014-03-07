@@ -30,7 +30,7 @@ config.assets.precompile += [ /^unit-\w+.(css|js)$/ ]
 
 ## Demo and Usage
 
-Example Directory Tree. 
+Example Directory Tree.
 
 ```bash
 stylesheets/

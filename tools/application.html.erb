@@ -8,9 +8,9 @@
 
 <body>
 	<%= content_for?(:app_header) ? yield(:app_header) : render("app_header") rescue nil %>
-	
+
 	<%= yield %>
-	
+
 	<%= content_for?(:app_footer) ? yield(:app_footer) : render("app_footer") rescue nil %>
 
 	<div id="extra-markup"><span><!--/--></span></div>
