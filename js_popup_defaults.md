@@ -1,6 +1,6 @@
 # JavaScript Popup defaults
 
-popup window with predefined width/height values. Override with `data-popup` attribute
+popup window with predefined width/height values. Override defaults with `data-popup` attribute
 
 ## Installation
 
