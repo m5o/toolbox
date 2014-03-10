@@ -1,6 +1,6 @@
 # ISO 8859-1 Whitelist Validator
 
-Whitelist all ISO-8859-1 Chars. Removes all chars that are not in ISO-8859-1 range.
+Whitelist all ISO-8859-1 chars. Removes all chars that are not in ISO-8859-1 range.
 http://www.utf8-chartable.de/unicode-utf8-table.pl
 
 ## Installation
