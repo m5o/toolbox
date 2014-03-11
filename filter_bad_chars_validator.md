@@ -1,6 +1,6 @@
 # Filter Predefined Characters Validator
 
-Filter predefined or bad characters from inputs
+Filter predefined or bad characters from inputs.
 
 ## Installation
 
