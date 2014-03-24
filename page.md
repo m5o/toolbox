@@ -114,7 +114,7 @@ __example in `app/views/**/*.html.erb`__
 
 ```erb
 <%# or update/change the values inside .html.erb %>
-<% debug(@page) %>
+<%= debug(@page) %>
 <% @page.title = "custom title" %>
 <% @page.meta_description = "custom meta" %>
 ```
