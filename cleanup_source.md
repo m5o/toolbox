@@ -11,7 +11,7 @@ Various task to replace, remove tabs/spaces/trailing whitespaces
 
 ```bash
 rake -T
-# there should be this lines
+
 rake source:despace                           # Replace two spaces in source code files with tab
 rake source:detab                             # Replace all tabs in source code files with two spaces
 rake source:detrail                           # Remove trailing whitespace on the ends of lines
