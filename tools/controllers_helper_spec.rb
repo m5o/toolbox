@@ -5,7 +5,7 @@ describe ControllersHelper do
 
   describe "#controller?" do
     before do
-      helper.stub(:params).and_return({ :controller => "contents" })
+      helper.stub(:params).and_return({ controller: "contents" })
     end
 
     it "returns true if contoller match" do
@@ -20,7 +20,7 @@ describe ControllersHelper do
 
   describe "#action?" do
     before do
-      helper.stub(:params).and_return({ :action => "index" })
+      helper.stub(:params).and_return({ action: "index" })
     end
 
     it "returns true if action match" do
