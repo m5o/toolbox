@@ -23,8 +23,10 @@ namespace :unused do
         images_found << image if result
       end
     end
+    puts "\n"
 
     images_to_delete = image_list - images_found
+    images_to_delete.sort!
 
     puts images_to_delete.join("\n") unless verbose
     puts "\n\nFound #{images_found.count} used images from #{image_list.count} assets"
