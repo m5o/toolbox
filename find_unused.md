@@ -13,4 +13,5 @@ find unused images on Rails project
 rake -T
 
 rake unused:image                             # Find unused images on Rails project to deletion
+rake unused:images_print_rm                   # Find unused images, list and print remove command
 ```
