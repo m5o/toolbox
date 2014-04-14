@@ -25,10 +25,10 @@ end
 
 ```bash
 rake -T
-# there should be this line
+
 rake generate_static_error_pages                  # Generate static error pages
-# generate with production env
+// generate with production env
 rake generate_static_error_pages RAILS_ENV=production
-# generated pages are in /public
-# git status / git commit
+// generated pages are in /public
+// git status / git commit
 ```
