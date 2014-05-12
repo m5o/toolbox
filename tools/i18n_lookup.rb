@@ -2,7 +2,6 @@
 # archived mirror http://cache.preserve.io/8vupog4s/index.html
 # original of http://www.unixgods.org/~tilo/Rails/which_l10n_strings_is_rails_trying_to_lookup.html
 #
-return unless Rails.env.development?
 
 # add newer versions to this array if the method definition didn't change, otherwise do an if-cascade
 if ['0.6.9'].include?(I18n::VERSION)
