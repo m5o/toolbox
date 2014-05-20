@@ -12,5 +12,5 @@ display flash messages in rails app
 Include partial loading inside your `views/layouts/application.html.erb`
 
 ```erb
-<%= render "shared/flash", locals: { flash: flash } if flash.any? %>
+<%= render "shared/flash", flash: flash if flash.any? %>
 ```
