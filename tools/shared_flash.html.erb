@@ -1,7 +1,7 @@
-<% locals[:flash].each do |type, body| %>
+<% local_assigns[:flash].each do |type, body| %>
 	<% # skip devise flash variable  %>
 	<% next if type == :timedout %>
-	<%# unless locals[:flash][type].blank? ## if extra markup is needed %>
+	<%# unless local_assigns[:flash][type].blank? ## if extra markup is needed %>
 
 	<%= content_tag :div, class: "alert alert-#{type} alert-flash" do %>
 		<button class="close" data-dismiss="alert">×</button>
