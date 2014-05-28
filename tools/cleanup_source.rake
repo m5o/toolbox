@@ -31,7 +31,7 @@ namespace :source do
     find_and_replace_in_source_files("\t", "  ")
   end
 
-  desc "Replace two spaces in source code files with tab "
+  desc "Replace two spaces in source code files with tab"
   task :despace do
     find_and_replace_in_source_files("  ", "\t", true)
   end
