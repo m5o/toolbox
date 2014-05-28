@@ -1,6 +1,6 @@
 # Cleanup/remove trailing whitespace and tabs/spaces
 
-Various task to replace, remove tabs/spaces/trailing whitespaces
+Various task to replace, remove tabs/[double] spaces/trailing whitespaces
 
 ## Installation
 
@@ -12,6 +12,7 @@ Various task to replace, remove tabs/spaces/trailing whitespaces
 ```bash
 rake -T
 
+rake source:dedouble                          # Remove double whitespace between words in a line
 rake source:despace                           # Replace two spaces in source code files with tab
 rake source:detab                             # Replace all tabs in source code files with two spaces
 rake source:detrail                           # Remove trailing whitespace on the ends of lines
