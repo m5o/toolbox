@@ -15,3 +15,17 @@ There is also a gem `rails-i18n-debug` use them if you don't want to patch manua
 
 * http://cache.preserve.io/8vupog4s/index.html
 * https://github.com/256dpi/rails-i18n-debug
+
+
+## Rspec - I18n Exception Handler
+
+```rb
+# add in spec/spec_helper.rb
+# Raise an error if a tranlation key can not be found
+class TestExceptionTranslationHandler
+  def call(exception, locale, key, options)
+    raise exception.message
+  end
+end
+I18n.exception_handler = TestExceptionTranslationHandler.new
+```
