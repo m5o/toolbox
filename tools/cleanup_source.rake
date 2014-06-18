@@ -17,10 +17,10 @@ namespace :source do
     end
 
     files.each do |file_name|
-      text = File.open(file_name, 'r'){ |file| file.read }
+      text = File.open(file_name, 'r') { |file| file.read }
       if text.gsub!(find, replace)
         puts "rewriting #{file_name}..."
-        File.open(file_name, 'w'){|file| file.write(text)}
+        File.open(file_name, 'w') { |file| file.write(text) }
       end
     end
   end
