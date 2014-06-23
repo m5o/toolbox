@@ -26,11 +26,6 @@ namespace :source do
   end
 
 
-  desc "Remove double whitespace between words in a line"
-  task :dedouble do
-    find_and_replace_in_source_files(/([\S])[ ]{2,}([\S])/, '\1 \2', true)
-  end
-
   desc "Replace all tabs in source code files with two spaces"
   task :detab do
     find_and_replace_in_source_files("\t", "  ")
@@ -54,6 +49,11 @@ namespace :source do
   desc "wip - Rewrite curly brackets without leading/trailing space for single line blocks"
   task :decurlysbracketspace do
     find_and_replace_in_source_files(/[^#]\{(\S)(.+)(\S)\}/, '{ \1\2\3 }', true)
+  end
+
+  desc "Remove double whitespace between words in a line"
+  task :doublespace do
+    find_and_replace_in_source_files(/([\S])[ ]{2,}([\S])/, '\1 \2', true)
   end
 
   desc "Replace all instances of {pattern} with {result}"
