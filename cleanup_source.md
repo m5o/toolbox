@@ -12,6 +12,7 @@ Various task to replace, remove tabs/[double] spaces/trailing whitespaces
 ```bash
 rake -T
 
+rake source:cssattrspace                      # experiment - Add one whitespace between CSS attribute and value rule
 rake source:decurlysbracketspace              # wip - Rewrite curly brackets without leading/trailing space for single line blocks
 rake source:derocket                          # Rewrite hash rocket syntax for all symbol hash keys
 rake source:despace                           # Replace two spaces in source code files with tab

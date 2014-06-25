@@ -26,6 +26,11 @@ namespace :source do
   end
 
 
+  desc "experiment - Add one whitespace between CSS attribute and value rule"
+  task :cssattrspace do
+    find_and_replace_in_source_files(/(.+):\s{0}(\S+)/, '\1: \2')
+  end
+
   desc "Replace all tabs in source code files with two spaces"
   task :detab do
     find_and_replace_in_source_files("\t", "  ")
