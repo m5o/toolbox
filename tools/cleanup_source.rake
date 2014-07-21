@@ -48,6 +48,7 @@ namespace :source do
 
   desc "Rewrite hash rocket syntax for all symbol hash keys"
   task :derocket do
+    # test alternative: Ruby 2.1 Old Hash to New Hash Textmate Find&Replace: ([[{][ ][(][, ]]):([_0-9a-zA-Z]*)( =>)
     find_and_replace_in_source_files(/:(\w+)\s?=>\s?(\S+)/, '\1: \2')
   end
 
