@@ -14,10 +14,11 @@ There is also a gem `rails-i18n-debug` use them if you don't want to patch manua
 ## Docs & Credits
 
 * http://cache.preserve.io/8vupog4s/index.html
+* https://github.com/256dpi/rails-i18n-debug
+
+* https://github.com/glebm/i18n-tasks
 * https://github.com/tigrish/i18n-spec
 * https://github.com/redealumni/i18n_yaml_sorter
-* https://github.com/256dpi/rails-i18n-debug
-* https://github.com/glebm/i18n-tasks
 * [Blog: improvements-for-a-rails-i18n-workflow](http://engineering.moneybird.com/posts/2014/06/10/3-improvements-for-a-rails-i18n-workflow/) / [i18n-workflow gem](https://github.com/moneybird/i18n-workflow)
 * https://gist.github.com/cpetschnig/1594660
 * http://blog.endpoint.com/2013/04/debugging-localization-in-rails.html
