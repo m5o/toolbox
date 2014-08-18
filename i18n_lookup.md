@@ -15,8 +15,6 @@ There is also a gem `rails-i18n-debug` use them if you don't want to patch manua
 
 * http://cache.preserve.io/8vupog4s/index.html
 * https://github.com/256dpi/rails-i18n-debug
-
-
 * https://github.com/glebm/i18n-tasks
 * https://github.com/tigrish/i18n-spec
 * https://github.com/redealumni/i18n_yaml_sorter
