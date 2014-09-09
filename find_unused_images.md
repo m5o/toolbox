@@ -4,7 +4,7 @@ find unused images on Rails project
 
 ## Installation
 
-* copy `find_unused.rake` to `lib/tasks/find_unused.rake`
+* copy `find_unused_images.rake` to `lib/tasks/find_unused_images.rake`
 
 
 ## Usage
