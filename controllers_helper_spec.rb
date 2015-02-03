@@ -27,7 +27,7 @@ describe ControllersHelper do
       helper.action?("index").should be true
     end
 
-    it "returns true if action match" do
+    it "returns false if action didn't match" do
       helper.action?("new").should be false
     end
   end
