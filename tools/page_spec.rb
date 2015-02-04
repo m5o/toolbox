@@ -32,8 +32,8 @@ describe Page do
       it { expect(page.page_name).to be_blank }
       it { expect(page.meta_description).to eq "custom meta desc" }
       it { expect(page.meta_keywords).to eq "some useless keywords" }
-      it { page.header.should be_a_kind_of Hash }
-      it { page.footer.should be_a_kind_of Hash }
+      it { expect(page.header).to be_a_kind_of Hash }
+      it { expect(page.footer).to be_a_kind_of Hash }
       it { expect(page.layout).to eq "application" }
       it { expect(page.body_class).to eq "" }
       it { expect(page.is_tracking).to eq true }
