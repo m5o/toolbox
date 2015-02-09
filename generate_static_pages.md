@@ -32,3 +32,7 @@ rake generate_static_error_pages RAILS_ENV=production
 // generated pages are in /public
 // git status / git commit
 ```
+
+## Alternatives
+
+* [Dynamic error pages in Rails](http://wearestac.com/blog/dynamic-error-pages-in-rails)
