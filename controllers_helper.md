@@ -16,3 +16,7 @@ controller?("contents", "users")
 ```ruby
 action?("index")
 ```
+
+```ruby
+is_active?(root_path)
+```
