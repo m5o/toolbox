@@ -32,4 +32,17 @@ describe ControllersHelper do
     end
   end
 
+
+  describe "#is_active?" do
+    it "returns 'active' if action match" do
+      allow(helper).to receive(:current_page?).with(root_url).and_return(true)
+      expect(helper.is_active?("http://test.host/")).to eq "active"
+    end
+
+    it "returns nil if action didn't match" do
+      allow(view).to receive(:current_page?).and_return(false)
+      expect(helper.is_active?(controller: "invalid")).to eq nil
+    end
+  end
+
 end
