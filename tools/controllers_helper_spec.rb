@@ -39,6 +39,11 @@ describe ControllersHelper do
       expect(helper.is_active?("http://test.host/")).to eq "active"
     end
 
+    it "returns custom css class if action match" do
+      allow(helper).to receive(:current_page?).with(root_url(host: "test.host", locale: :en)).and_return(true)
+      expect(helper.is_active?("http://test.host/en", "custom-active")).to eq "custom-active"
+    end
+
     it "returns nil if action didn't match" do
       allow(view).to receive(:current_page?).and_return(false)
       expect(helper.is_active?(controller: "invalid")).to eq nil
