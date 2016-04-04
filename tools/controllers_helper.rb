@@ -11,8 +11,8 @@ module ControllersHelper
     action.include?(params[:action])
   end
 
-  def is_active?(link_path)
-    current_page?(link_path) ? "active" : nil
+  def is_active?(link_path, return_class = "active")
+    current_page?(link_path) ? return_class : nil
   end
 
 end

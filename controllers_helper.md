@@ -19,4 +19,5 @@ action?("index")
 
 ```ruby
 is_active?(root_path)
+is_active?(root_path, "custom-active-css-class")
 ```
