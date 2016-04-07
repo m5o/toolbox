@@ -10,6 +10,10 @@ Rails controller and action helper for views
 ## Usage
 
 ```ruby
+namespace?("admin")
+```
+
+```ruby
 controller?("contents", "users")
 ```
 
