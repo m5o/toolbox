@@ -3,17 +3,39 @@ require 'spec_helper'
 
 describe ControllersHelper do
 
+  describe "#namespace?" do
+    before do
+      allow(helper).to receive(:params).and_return(controller: "admin/contents")
+    end
+
+    it "returns true if match" do
+      expect(helper.namespace?("admin")).to be true
+    end
+
+    it "returns true if match any" do
+      expect(helper.namespace?("admin", "application")).to be true
+    end
+
+    it "returns false if didn't match" do
+      expect(helper.namespace?("application")).to be false
+    end
+  end
+
   describe "#controller?" do
     before do
       allow(helper).to receive(:params).and_return(controller: "contents")
     end
 
-    it "returns true if contoller match" do
+    it "returns true if match" do
       expect(helper.controller?("contents")).to be true
     end
 
     it "returns true if match any" do
       expect(helper.controller?("contents", "users")).to be true
+    end
+
+    it "returns false if didn't match any" do
+      expect(helper.controller?("application", "users")).to be false
     end
   end
 
@@ -23,11 +45,15 @@ describe ControllersHelper do
       allow(helper).to receive(:params).and_return(action: "index")
     end
 
-    it "returns true if action match" do
+    it "returns true if match" do
       expect(helper.action?("index")).to be true
     end
 
-    it "returns false if action didn't match" do
+    it "returns true if match any" do
+      expect(helper.action?("index", "new")).to be true
+    end
+
+    it "returns false if didn't match" do
       expect(helper.action?("new")).to be false
     end
   end
